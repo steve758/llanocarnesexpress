@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* estilos barra de navegacion  */
+.nav-buttons{
+     
+     margin-left: 40%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"poppins" , sans-serif  ;
+    text-align: center;
+}
+
+.titulo-galeria h1{
+  background-position: center;
+ 
+  }
+
+h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100 ;
+}
+
+h2{
+    font-size: 1.8rem;
+   font-weight: 600; 
+}
+
+
+h3{
+    font-size: 1.5rem;
+   font-weight: 800; 
+   color: #000;
+}
+
+
+h4{
+    font-size: 1.2rem;
+   font-weight: 600; 
+}
+
+
+h5{
+    font-size: 1rem;
+   font-weight: 400; 
+}
+
+h6{
+    color: #c40f0f; 
+}
+
+button{
+
+    font-size: 0.8rem;
+    font-weight: 900;s
+    outline: none;  
+    border: 15px;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 10px   0px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+        
+}
+
+button:hover{
+    background-color: rgb(143, 68, 58);
+    
+
+}
+
+.navbar{
+    font-size: 15px;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 10px;
+    color: #000;
+    transition: 0.2s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:hover{
+    color: rgba(216, 31, 31, 0.452);
+
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.1s ease ;
+    font-weight: 500;
+    cursor: pointer; 
+    margin-left: 5px;
+    
+}
+
+@media only screen and (max-width:990px){
+
+    .nav-buttons{
+        margin: 20px;   
+    }
+
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;       
+    }
+
+    .nav-buttons ul .fas{
+        margin: 20px 5px 10px 20px;
+    }
+
+        
+} 
+
+/*--------------banner 1 --------------*/
+#home{
+  color: aliceblue;
+  background-image: url("../imgs/carnes.jpg");
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 80px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+
+}
+
+#home span{
+  color: coral;
+
+}
+
+#home h1{
+  color:  rgba(0, 0, 0,0.8);
+  color: white; text-shadow: #333 0.1em 0.1em 0.1em;
+  
+}
+
+#home p{
+  color:  rgba(0, 0, 0,0.8);
+  
+  color: rgb(255, 255, 255); text-shadow: rgb(39, 38, 38. 0.2 ) 0.1em 0.1em 0.1em;
+  text-shadow: -1px -1px white, 2px 2px #333
+}
+
+#new .one img{
+  width: 100%;
+  height: 0%;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#new .one{
+  position: relative;
+  border-radius: 50%;
+}
+
+#new .one .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: burlywood;
+  font-weight: bold;
+  transition: 0.4s ease;
+  opacity: 0.8;
+  background-color: rgb(1, 1, 1);
+  width: 100%;
+  height: 100%;
+}
+#new .one .details:hover{
+  background-color: whitesmoke ;
+}
+
+#new .one:nth-child(1) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+
+}
+
+#new .one:nth-child(2) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+#new .one:nth-child(3) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+#banner{
+  background-image: url("../imgs/carnes.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 80px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+#banner h1{
+  color: coral;
+}
+
+
+
+#banner button{
+  background-color: #fb774b;
+}
+
+
+
+#banner button:hover{
+  background-color: #ebe3e31d;
+}
+
+#banner {
+color: aliceblue;
+background-image: url("../imgs/brand/imagen\ banner\ 2desenfoque.png");
+width: 100%;
+height: 40vh;
+background-size: cover;
+background-position-x: center;
+background-position-y: 80px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+text-align: center;
+position: relative; /* Añadir posición relativa */
+}
+
+#banner::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: inherit; /* Hereda la imagen de fondo del banner */
+filter: blur(5px); /* Aplica el desenfoque al fondo */
+z-index: -1; /* Coloca el fondo desenfocado detrás del contenido */
+}
+
+
+/*----------------------------productos---------------------------------*/
+
+.product{
+cursor: pointer;
+margin-bottom: 2rem;
+
+}
+  
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+
+
+}
+.product .buy-btn{
+background-color: #fb774b;
+transform: translateY(50px);
+opacity: 0;
+transition: 0.3s all;;
+}
+
+.product:hover .buy-btn{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+hr{
+    width: 30px;
+    height: 3px;
+    opacity: 1;
+    background-color: #fb774b;
+}
+
+
+
+.star{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.9rem;
+    color: goldenrod;
+}
+
+
+
+/* estilos seccion valores */
+
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  
+}
+
+.valor-text.hidden {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.valor-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.valores-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #5352520e;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+}
+
+.valores-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.valores-images {
+  display: flex;
+  justify-content: space-between; /* Cambiamos a "space-between" para que los elementos estén separados igualmente */
+  align-items: center; /* Centramos verticalmente los elementos en el contenedor */
+  flex-wrap: wrap;
+}
+
+.valor {
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1; /* Distribuye el espacio disponible igualmente entre los elementos */
+  max-width: 25%; /* Establece un ancho máximo para cada elemento para que haya 4 en una fila */
+  box-sizing: border-box; /* Incluye el padding en el ancho máximo */
+}
+
+
+
+
+.valor img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.6);
+}
+
+.valor-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.valor-subtitle {
+  font-size: 14px;
+}
+
+/*--------------------------------------*/
+
+/*------------------banner 2---------------------*/
+
+#banner span{
+  color: coral;
+
+}
+
+#banner h1{
+  color:  rgba(0, 0, 0,0.8);
+  color: white; text-shadow: #333 0.1em 0.1em 0.1em;
+  
+}
+
+#banner p{
+  color:  rgba(0, 0, 0,0.8);
+  
+  color: rgb(255, 255, 255); text-shadow: rgb(39, 38, 38. 0.2 ) 0.1em 0.1em 0.1em;
+  text-shadow: -1px -1px white, 2px 2px #333
+}
+
+
+/* Resto de estilos del .container-carousel */
+
+.container-carousel {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #e0e0e0;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: clip ;
+  
+
+}
+
+.carruseles {
+  width: 1000%;
+  height: 100%;
+  display: flex;
+
+}
+
+.slider-section {
+  width: calc(100% / 10);
+  height: 100%;
+}
+
+.slider-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #333333d4;
+  color: #fff;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+/* Estilos generales para el footer */
+
+footer {
+    background-color: #222;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 2px; /* Añade espacio alrededor del contenido del footer */
+    text-align: center; /* Centra el texto del footer */
+  }
+  
+  /* Estilos para encabezados en el footer */
+  footer h5 {
+    color: #d8d8d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0; /* Elimina el margen superior e inferior predeterminado */
+  }
+  
+  /* Estilos para la lista en el footer */
+  footer ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el espacio interno de la lista */
+  }
+  
+  /* Estilos para los elementos de la lista en el footer */
+  footer li {
+    padding-bottom: 8px;
+  }
+  
+  /* Estilos para los enlaces en el footer */
+  footer a {
+    color: #d8d8d8;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    transition: color 0.3s ease; /* Agrega una transición suave al color */
+  }
+  
+  /* Cambia el color de los enlaces cuando se desplazan sobre ellos */
+  footer a:hover {
+    color: #ff000096;
+  }
+  
+  /* Estilos para el bloque de derechos de autor */
+  footer .copyright {
+    margin-top: 20px; /* Agrega espacio en la parte superior del bloque de derechos de autor */
+  }
+  
+  /* Estilos para los íconos de redes sociales en el footer */
+  footer .copyright a {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: inline-flex; /* Para centrar verticalmente */
+    align-items: center; /* Para centrar verticalmente */
+    justify-content: center; /* Para centrar horizontalmente */
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+  }
+  
+  /* Cambia el color de los íconos de redes sociales cuando se desplazan sobre ellos */
+  footer .copyright a:hover {
+    color: #fff;
+    background-color: #fb774b;
+  }
+  
+  /* Estilos para el texto en el footer */
+  footer p {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    color: white;
+  }
+  
+  /* Estilos para los encabezados secundarios en el footer */
+  footer h6 {
+    color: white;
+    margin: 0; /* Elimina el margen superior e inferior predeterminado */
+  }
+  
+  /* Estilos para la imagen del logo en el footer */
+  footer .copyright img {
+    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    max-width: 100px; /* Define un ancho máximo para la imagen */
+  }
+  
+/* Estilos para el carrusel */
+  /* Aplica una opacidad del 50% a las imágenes fuera del contenedor */
+.container-carousel::before,
+.container-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.3); /* Cambia el último valor (0.5) para ajustar la opacidad */
+  z-index: -1;
+}
+
+/* Asegura que las imágenes se superpongan al contenido principal */
+.container-carousel {
+  position: relative;
+  
+}
+
+
+
+
+/*-------estilos ventana contacto------------*/
+

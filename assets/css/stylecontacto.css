@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap');
+
+/*menu*/
+.nav-buttons{
+     
+  margin-left: 40%;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-family:"poppins" , sans-serif  ;
+ text-align: center;
+}
+
+.titulo-galeria h1{
+background-position: center;
+
+}
+
+h1{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 2.5rem;
+ font-weight: 100 ;
+}
+
+h2{
+ font-size: 1.8rem;
+font-weight: 600; 
+}
+
+
+h3{
+ font-size: 1.5rem;
+font-weight: 800; 
+color: #000;
+}
+
+
+h4{
+ font-size: 1.2rem;
+font-weight: 600; 
+}
+
+
+h5{
+ font-size: 1rem;
+font-weight: 400; 
+}
+
+h6{
+ color: #c40f0f; 
+}
+
+button{
+
+ font-size: 0.8rem;
+ font-weight: 900;s
+ outline: none;  
+ border: 15px;
+ background-color: #1d1d1d;
+ color: white;
+ padding: 10px   0px;
+ text-transform: uppercase;
+ cursor: pointer;
+ transition: 0.5s ease;
+     
+}
+
+button:hover{
+ background-color: rgb(143, 68, 58);
+ 
+
+}
+
+.navbar{
+ font-size: 15px;
+ padding-top: 1rem !important;
+ padding-bottom: 1rem !important;
+ top: 0;
+ left: 0;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+.navbar-light .navbar-nav .nav-link {
+ padding: 0 10px;
+ color: #000;
+ transition: 0.2s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:hover{
+ color: rgba(216, 31, 31, 0.452);
+
+}
+
+.navbar i{
+ font-size: 1.2rem;
+ padding: 0 0.7px;
+ transition: 0.1s ease ;
+ font-weight: 500;
+ cursor: pointer; 
+ margin-left: 5px;
+ 
+}
+
+@media only screen and (max-width:990px){
+
+ .nav-buttons{
+     margin: 20px;   
+ }
+
+ .nav-buttons ul{
+     margin: 1rem;
+     justify-content: flex-start;
+     align-items: flex-start;
+     text-align: left;       
+ }
+
+ .nav-buttons ul .fas{
+     margin: 20px 5px 10px 20px;
+ }
+
+     
+} 
+
+
+
+/**/
+.container {
+    padding-bottom: 50px; /* Ajusta el valor según el espacio deseado */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+body{
+    background:url("../imgs/carnes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.contact-form {
+    background: #eee;
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px; /* Ajusta la distancia entre la barra de navegación y el cuadro de contacto */
+}
+.form{
+    border: 1px solid #a9a9a9;
+    margin: 7px 0px;
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+.contact-form h1{
+    font-weight: 500;
+    margin-top: 0px;
+
+}
+.form label{
+    font-size: 13px;
+    color: #000;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.form input, .form textarea{
+    width: 100%;
+    font-size: 19px;
+    margin-top: 5px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+.button{
+    width: 100%;
+    display: inline-block;
+    background-color: coral;
+    padding: 14px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*----------foooter------------*/
+
+/* Estilos generales para el footer */
+
+footer {
+    background-color: #222;
+    color: #d8d8d8;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 20px 0; /* Ajusta el espacio interior del footer */
+    text-align: center;
+}
+  
+  /* Estilos para encabezados en el footer */
+  footer h5 {
+    color: #d8d8d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0; /* Elimina el margen superior e inferior predeterminado */
+  }
+  
+  /* Estilos para la lista en el footer */
+  footer ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el espacio interno de la lista */
+  }
+  
+  /* Estilos para los elementos de la lista en el footer */
+  footer li {
+    padding-bottom: 8px;
+  }
+  
+  /* Estilos para los enlaces en el footer */
+  footer a {
+    color: #d8d8d8;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    transition: color 0.3s ease; /* Agrega una transición suave al color */
+  }
+  
+  /* Cambia el color de los enlaces cuando se desplazan sobre ellos */
+  footer a:hover {
+    color: #ff000096;
+  }
+  
+  /* Estilos para el bloque de derechos de autor */
+  footer .copyright {
+    margin-top: 20px; /* Agrega espacio en la parte superior del bloque de derechos de autor */
+  }
+  
+  /* Estilos para los íconos de redes sociales en el footer */
+  footer .copyright a {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: inline-flex; /* Para centrar verticalmente */
+    align-items: center; /* Para centrar verticalmente */
+    justify-content: center; /* Para centrar horizontalmente */
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+  }
+  
+  /* Cambia el color de los íconos de redes sociales cuando se desplazan sobre ellos */
+  footer .copyright a:hover {
+    color: #fff;
+    background-color: #fb774b;
+  }
+  
+  /* Estilos para el texto en el footer */
+  footer p {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    color: white;
+  }
+  
+  /* Estilos para los encabezados secundarios en el footer */
+  footer h6 {
+    color: white;
+    margin: 0; /* Elimina el margen superior e inferior predeterminado */
+  }
+  
+  /* Estilos para la imagen del logo en el footer */
+  footer .copyright img {
+    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    max-width: 100px; /* Define un ancho máximo para la imagen */
+  }
+  
+/* Estilos para el carrusel */
+  /* Aplica una opacidad del 50% a las imágenes fuera del contenedor */
+.container-carousel::before,
+.container-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.3); /* Cambia el último valor (0.5) para ajustar la opacidad */
+  z-index: -1;
+}
+
+/* Asegura que las imágenes se superpongan al contenido principal */
+.container-carousel {
+  position: relative;
+  
+}
+
