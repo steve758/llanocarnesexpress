@@ -631,5 +631,73 @@ footer {
 
 
 
-/*-------estilos ventana contacto------------*/
+/*-------estilos que ofrecemos------------*/
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Ajusta según la fuente que desees utilizar */
+}
+
+.ofrecemos-section {
+  background: url('assets/imgs/brand/100.png') center/cover; /* Ajusta la ruta de la imagen y los estilos de fondo */
+  padding: 100px;
+  text-align: center;
+  color: coral;
+}
+
+.ofrecemos-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  background-color: white; /* Ajusta según el color de la línea */
+  margin: 0 auto 20px;
+}
+
+.productos-title {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.graficos-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grafico {
+  flex: 1;
+  padding: 20px;
+}
+
+.titulo-grafico {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.barra {
+  width: 0;
+  height: 20px;
+  background-color: #95c44f;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: width 10s ease; /* Ajusta la duración de la animación aquí */
+  animation-delay: 1s; /* Ajusta el retraso inicial aquí */
+}
+
+
+.barra::after {
+  content: attr(data-porcentaje) '%';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
 

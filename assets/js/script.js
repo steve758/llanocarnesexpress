@@ -145,3 +145,28 @@ document.addEventListener("DOMContentLoaded", function () {
   // Cambiar la imagen cada 2 segundos (2000 milisegundos)
   setInterval(changeImage, 5000);
 });
+
+/*------------Barras dinamicas------------------*/ 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const graficos = document.querySelectorAll('.grafico');
+
+  graficos.forEach(grafico => {
+    const porcentaje = grafico.getAttribute('data-porcentaje');
+    const barra = grafico.querySelector('.barra');
+    barra.style.width = porcentaje + '%';
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const graficos = document.querySelectorAll('.grafico');
+
+  graficos.forEach(grafico => {
+    const porcentaje = grafico.getAttribute('data-porcentaje');
+    const barra = grafico.querySelector('.barra');
+    barra.style.width = porcentaje + '%';
+    barra.style.animation = 'none'; // Asegúrate de que no haya ninguna animación al principio
+    setTimeout(() => {
+      barra.style.animation = null; // Elimina la animación para que se active cuando se cambie la anchura
+    }, 100);
+  });
+});
