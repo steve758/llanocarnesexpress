@@ -337,14 +337,54 @@ hr{
 
 
 
-/* estilos seccion valores */
+/* ----------------------estilos seccion valores-------------- */
+
+.valores-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Cambiamos a "space-between" para que los elementos estén separados igualmente */
+  align-items: flex-start; /* Centramos verticalmente los elementos en el contenedor */
+  
+}
+
+.valor {
+  width: 10%; /* O ajusta según tus necesidades */
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1; /* Distribuye el espacio disponible igualmente entre los elementos */
+  max-width: 85%; /* Establece un ancho máximo para cada elemento para que haya 4 en una fila */
+  box-sizing: border-box; /* Incluye el padding en el ancho máximo */
+}
+
+.valor img {
+  width: 100%; /* Ajusta según tus necesidades */
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
+}
+.valor-text-container {
+  margin-top: 10px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .valor {
+    width: 100%; /* Cambia el ancho para adaptarse a una sola columna */
+    
+  }
+}
+
 
 
 .toggle-button {
-  background-color: transparent;
-  border: none;
+  background-color: rgba(255, 127, 80, 0.562);
+  border: 2px solid rgba(0, 0, 0, 0.301);
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
+  border-radius: 5px;
   color: rgb(0, 0, 0);
   
 }
@@ -354,7 +394,7 @@ hr{
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .valor-text-container {
@@ -376,24 +416,6 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
 }
-
-.valores-images {
-  display: flex;
-  justify-content: space-between; /* Cambiamos a "space-between" para que los elementos estén separados igualmente */
-  align-items: center; /* Centramos verticalmente los elementos en el contenedor */
-  flex-wrap: wrap;
-}
-
-.valor {
-  text-align: center;
-  margin-bottom: 20px;
-  flex: 1; /* Distribuye el espacio disponible igualmente entre los elementos */
-  max-width: 25%; /* Establece un ancho máximo para cada elemento para que haya 4 en una fila */
-  box-sizing: border-box; /* Incluye el padding en el ancho máximo */
-}
-
-
-
 
 .valor img {
   width: 150px;
