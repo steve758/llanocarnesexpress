@@ -19,8 +19,7 @@ body{
 
 .titulo-galeria h1{
   background-position: center;
- 
-  }
+}
 
 h1{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -56,29 +55,8 @@ h6{
     color: #c40f0f; 
 }
 
-button{
-
-    font-size: 0.8rem;
-    font-weight: 900;s
-    outline: none;  
-    border: 15px;
-    background-color: #1d1d1d;
-    color: white;
-    padding: 10px   0px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.5s ease;
-        
-}
-
-button:hover{
-    background-color: rgb(143, 68, 58);
-    
-
-}
-
 .navbar{
-    font-size: 15px;
+    font-size: 18px;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
     top: 0;
@@ -87,16 +65,21 @@ button:hover{
 }
 
 .navbar-light .navbar-nav .nav-link {
-    padding: 0 10px;
+    padding: 0 0px;   /*distancia de menu del costado izq*/
     color: #000;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
+}
+
+.nav-item{
+  padding: 0 0px;
+  color: rgb(255, 80, 80);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar i:hover,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar i:hover{
-    color: rgba(216, 31, 31, 0.452);
+    color: coral;
 
 }
 
@@ -135,7 +118,7 @@ button:hover{
   color: aliceblue;
   background-image: url("../imgs/carnes.jpg");
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
   background-position-x: center;
   background-position-y: 80px;
@@ -151,7 +134,7 @@ button:hover{
 
 #home span{
   color: coral;
-
+  padding-top: 400px;
 }
 
 #home h1{
@@ -162,84 +145,14 @@ button:hover{
 
 #home p{
   color:  rgba(0, 0, 0,0.8);
-  
-  color: rgb(255, 255, 255); text-shadow: rgb(39, 38, 38. 0.2 ) 0.1em 0.1em 0.1em;
-  text-shadow: -1px -1px white, 2px 2px #333
-}
-
-#new .one img{
-  width: 100%;
-  height: 0%;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-#new .one{
-  position: relative;
-  border-radius: 50%;
-}
-
-#new .one .details{
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: burlywood;
   font-weight: bold;
-  transition: 0.4s ease;
-  opacity: 0.8;
-  background-color: rgb(1, 1, 1);
-  width: 100%;
-  height: 100%;
+  color: rgb(255, 255, 255);
+  text-shadow: #333 0.1em 0.1em 0.1em; 
+  
+  
 }
-#new .one .details:hover{
-  background-color: whitesmoke ;
-}
+/*-------------------------*/
 
-#new .one:nth-child(1) .details{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: start;
-
-}
-
-#new .one:nth-child(2) .details{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-}
-
-#new .one:nth-child(3) .details{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-}
-
-
-#banner{
-  background-image: url("../imgs/carnes.jpg");
-  width: 100%;
-  height: 60vh;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: 80px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-}
 #banner h1{
   color: coral;
 }
@@ -260,7 +173,7 @@ button:hover{
 color: aliceblue;
 background-image: url("../imgs/brand/imagen\ banner\ 2desenfoque.png");
 width: 100%;
-height: 40vh;
+height: 80vh;
 background-size: cover;
 background-position-x: center;
 background-position-y: 80px;
@@ -338,6 +251,26 @@ hr{
 
 
 /* ----------------------estilos seccion valores-------------- */
+button{
+
+  font-size: 0.8rem;
+  font-weight: 900;s
+  outline: none;  
+  border: 15px;
+  background-color: #1d1d1d;
+  color: #333;
+  padding: 10px   10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease;
+      
+}
+
+button:hover{
+  background-color: rgb(46, 45, 45);
+  
+
+}
 
 .valores-images {
   display: flex;
@@ -445,16 +378,19 @@ body {
 }
 
 #banner h1{
-  color:  rgba(0, 0, 0,0.8);
+  color:  rgba(0, 0, 0,0.2);
   color: white; text-shadow: #333 0.1em 0.1em 0.1em;
-  
+  font-weight: bold;  
 }
+
 
 #banner p{
   color:  rgba(0, 0, 0,0.8);
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: #333 0.1em 0.1em 0.1em; 
   
-  color: rgb(255, 255, 255); text-shadow: rgb(39, 38, 38. 0.2 ) 0.1em 0.1em 0.1em;
-  text-shadow: -1px -1px white, 2px 2px #333
+  
 }
 
 
@@ -462,7 +398,7 @@ body {
 
 .container-carousel {
   position: relative;
-  width: 500px;
+  width: 400px;
   height: 300px;
   margin: 0 auto;
   background-color: #e0e0e0;
@@ -474,7 +410,7 @@ body {
 }
 
 .carruseles {
-  width: 1000%;
+  width: 1300%;
   height: 100%;
   display: flex;
 
@@ -639,10 +575,16 @@ body {
 }
 
 .ofrecemos-section {
-  background: url('assets/imgs/brand/100.png') center/cover; /* Ajusta la ruta de la imagen y los estilos de fondo */
+  background: url("../imgs/brand/1000.png") center/cover; /* Ajusta la ruta de la imagen y los estilos de fondo */
   padding: 100px;
   text-align: center;
-  color: coral;
+  color: white;
+  filter: blur(0.3px);
+}
+
+
+.titulo-grafico {
+  font-weight: bold;
 }
 
 .ofrecemos-title {
@@ -681,13 +623,13 @@ body {
 
 .barra {
   width: 0;
-  height: 20px;
-  background-color: #95c44f;
+  height: 30px;
+  background-color: coral;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  transition: width 10s ease; /* Ajusta la duración de la animación aquí */
-  animation-delay: 1s; /* Ajusta el retraso inicial aquí */
+  transition: width 1s ease; /* Ajusta la duración de la animación aquí */
+
 }
 
 
@@ -701,3 +643,23 @@ body {
 }
 
 
+.barra-container {
+  position: relative;
+}
+
+.porcentaje {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  color: white;
+ }
+@keyframes desplazamiento {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}

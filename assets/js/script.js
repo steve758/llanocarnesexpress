@@ -122,30 +122,6 @@ function moveToLeft() {
     
 }   
 
-/*----------efectos cabio automatico 2 banner-------------*/
-
-document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".banner-images img");
-  let currentImageIndex = 0;
-
-  function changeImage() {
-    // Ocultar la imagen actual
-    images[currentImageIndex].style.opacity = "0";
-
-    // Incrementar el índice de la imagen actual
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-
-    // Mostrar la siguiente imagen
-    images[currentImageIndex].style.opacity = "1";
-  }
-
-  // Mostrar la primera imagen
-  images[currentImageIndex].style.opacity = "1";
-
-  // Cambiar la imagen cada 2 segundos (2000 milisegundos)
-  setInterval(changeImage, 5000);
-});
-
 /*------------Barras dinamicas------------------*/ 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -157,16 +133,36 @@ document.addEventListener('DOMContentLoaded', function () {
     barra.style.width = porcentaje + '%';
   });
 });
+
 document.addEventListener('DOMContentLoaded', function () {
   const graficos = document.querySelectorAll('.grafico');
 
   graficos.forEach(grafico => {
     const porcentaje = grafico.getAttribute('data-porcentaje');
     const barra = grafico.querySelector('.barra');
-    barra.style.width = porcentaje + '%';
-    barra.style.animation = 'none'; // Asegúrate de que no haya ninguna animación al principio
-    setTimeout(() => {
-      barra.style.animation = null; // Elimina la animación para que se active cuando se cambie la anchura
-    }, 100);
+    const porcentajeElement = grafico.querySelector('.porcentaje');
+
+    let contador = 0;
+    const duracionAnimacion = 15000; // Duración de la animación en milisegundos
+    const intervalo = setInterval(() => {
+      contador++;
+      barra.style.width = contador + '%';
+      porcentajeElement.textContent = contador + '%';
+
+      if (contador === parseInt(porcentaje)) {
+        clearInterval(intervalo);
+      }
+    }, duracionAnimacion / porcentaje); // Ajusta el intervalo en relación con la duración de la animación
   });
 });
+
+sr.reveal('.ofrecemos-section',{
+  duration : 100
+});
+
+sr.reveal('.ofrecemos-section', {
+  duration: 4000,
+  origin: 'top',
+  distance:'-500px'
+
+}) 
