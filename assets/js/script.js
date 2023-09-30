@@ -7,14 +7,14 @@ sr.reveal('.scroll-banner',{
 
     sr.reveal('.scroll-banner', {
       duration: 3000,
-      origin: 'bottom',
+      origin: 'top',
       distance:'-100px'
 
     })  
 
     sr.reveal('.scroll-banner', {
         duration: 3000,
-        origin: 'bottom',
+        origin: 'top',
         distance:'-100px'
   
       })  
@@ -25,21 +25,21 @@ sr.reveal('.scroll-banner',{
 
     sr.reveal('.buton-banner', {
       duration: 5000,
-      origin: 'bottom',
-      distance:'-100px'
+      origin: 'top',
+      distance:'-50px'
 
     })  
 
     sr.reveal('.buton-banner', {
         duration: 5000,
-        origin: 'down',
-        distance:'-400px'
+        origin: 'top',
+        distance:'-50px'
   
       })  
 
 
       sr.reveal('.logo', {
-       rotate: {
+       rotate:  {
         duration: 9000,
         x: 12,
         y: 90,
@@ -71,8 +71,30 @@ sr.reveal('.scroll-valores', {
       valorTexts[index].classList.toggle('hidden');
     });
   });
- /*---------------------*/
+ /*-----------activacion y desactivacion clase active----------*/
 
+ document.addEventListener('DOMContentLoaded', function () {
+  const toggleButtons = document.querySelectorAll('.toggle-button');
+
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const parentValor = this.closest('.valor');
+      const textContainer = parentValor.querySelector('.valor-text-container');
+
+      // Cambia la visibilidad del contenedor y del botón
+      textContainer.classList.toggle('active');
+      this.classList.toggle('active');
+
+      // Muestra u oculta el cuadro solo cuando está activo
+      if (textContainer.classList.contains('active')) {
+        textContainer.style.display = 'block';
+      } else {
+        textContainer.style.display = 'none';
+      }
+    });
+  });
+});
+/*---------------------------------------------------------------*/ 
 const btnLeft = document.querySelector(".btn-left"),
       btnRight = document.querySelector(".btn-right"),
       slider = document.querySelector("#slider"),

@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap');
-
-/*menu*/
 .nav-buttons{
      
   margin-left: 40%;
@@ -15,11 +12,11 @@
 body{
  font-family:"poppins" , sans-serif  ;
  text-align: center;
+ padding-top: 30px;
 }
 
 .titulo-galeria h1{
 background-position: center;
-
 }
 
 h1{
@@ -53,50 +50,32 @@ font-weight: 400;
 }
 
 h6{
- color: #c40f0f; 
+ color: #050505; 
 }
 
-button{
-
- font-size: 0.8rem;
- font-weight: 900;s
- outline: none;  
- border: 15px;
- background-color: #1d1d1d;
- color: white;
- padding: 10px   0px;
- text-transform: uppercase;
- cursor: pointer;
- transition: 0.5s ease;
-     
-}
-
-button:hover{
- background-color: rgb(143, 68, 58);
- 
-
-}
-
-.navbar{
- font-size: 15px;
- padding-top: 1rem !important;
- padding-bottom: 1rem !important;
- top: 0;
- left: 0;
- box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
 .navbar-light .navbar-nav .nav-link {
- padding: 0 10px;
+ padding: 0 0px;   /*distancia de menu del costado izq*/
  color: #000;
- transition: 0.2s ease;
+ transition: 0.3s ease;
+}
+
+.nav-item{
+padding: 0 0px;
+color: rgb(0, 0, 0);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar i:hover,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar i:hover{
- color: rgba(216, 31, 31, 0.452);
+ color: coral;
 
 }
 
@@ -116,7 +95,7 @@ button:hover{
      margin: 20px;   
  }
 
- .nav-buttons ul{
+  .nav-buttons ul{
      margin: 1rem;
      justify-content: flex-start;
      align-items: flex-start;
@@ -132,9 +111,37 @@ button:hover{
 
 
 
-/**/
+/*-----------------------------------------------------*/
+.row {
+  margin-top: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.contact-info {
+  margin-top: 10px; /* Ajusta este valor según sea necesario */
+  font-weight: bold;
+  
+
+}
+
+.contact-info p {
+  color: #000000; /* Cambia este valor por el color que desees */
+  font-size: 12px;
+  text-shadow: #ffffff 0.1em 0.1em 0.1em;
+  
+
+}
+
+.contact-info h1 {
+  color: #000000; /* Cambia este valor por el color que desees */
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: #ffffff 0.1em 0.1em 0.1em;
+  
+}
+
 .container {
-    padding-bottom: 50px; /* Ajusta el valor según el espacio deseado */
+    padding-bottom: 100px; /* Ajusta el valor según el espacio deseado */
+    padding-bottom: 5px;
 }
 
 * {
@@ -146,7 +153,7 @@ button:hover{
 
 
 body{
-    background:url("../imgs/carnes.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -155,22 +162,24 @@ body{
 }
 
 .contact-form {
-    background: #eee;
-    padding: 30px 40px;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 20px; /* Ajusta la distancia entre la barra de navegación y el cuadro de contacto */
+  background: #eee;
+  padding: 50px 40px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 1px; /* Ajusta este valor según sea necesario */
 }
 .form{
-    border: 1px solid #a9a9a9;
+    border: 1px solid #0000006c;
     margin: 7px 0px;
     padding: 6px 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    
 }
 .contact-form h1{
     font-weight: 500;
     margin-top: 0px;
-
+    
+    
 }
 .form label{
     font-size: 13px;
@@ -190,16 +199,71 @@ body{
 
 }
 .button{
-    width: 100%;
+    width: 40%;
     display: inline-block;
     background-color: coral;
-    padding: 14px 0px;
+    padding: 10px 10px;
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 8px;
     cursor: pointer;
     color: #fff;
 }
+
+
+
+
+/*------------------------------------------*/
+#home{
+  color: aliceblue;
+  background-image: url("../imgs/brand/9.jpeg");
+  margin-top: 100px;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 1px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+
+}
+
+
+#home h1{
+  color:  rgba(0, 0, 0,0.8);
+  color: white; text-shadow: #333 0.1em 0.1em 0.1em;
+  font-size: 50PX;
+  }
+
+#home p{
+  color:  rgba(0, 0, 0,0.8);
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: #333 0.1em 0.1em 0.1em; 
+}
+/*-------------------------*/
+
+#banner h1{
+  color: coral;
+}
+
+
+
+#banner button{
+  background-color: #fb774b;
+}
+
+
+
+#banner button:hover{
+  background-color: #ebe3e31d;
+}
+
 
 /*----------foooter------------*/
 
@@ -251,7 +315,7 @@ footer {
   
   /* Estilos para los íconos de redes sociales en el footer */
   footer .copyright a {
-    color: #000;
+    color: #ffffff;
     height: 40px;
     width: 40px;
     background-color: #fff;
@@ -290,22 +354,27 @@ footer {
     max-width: 100px; /* Define un ancho máximo para la imagen */
   }
   
-/* Estilos para el carrusel */
-  /* Aplica una opacidad del 50% a las imágenes fuera del contenedor */
-.container-carousel::before,
-.container-carousel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.3); /* Cambia el último valor (0.5) para ajustar la opacidad */
-  z-index: -1;
+
+/* Estilo para el texto en las etiquetas li */
+ul.text-uppercase li {
+  font-size: 12px; /* Ajusta el tamaño según tus preferencias */
 }
 
-/* Asegura que las imágenes se superpongan al contenido principal */
-.container-carousel {
-  position: relative;
-  
+/* Estilo para el texto en las etiquetas h5 */
+.footer-one h5 {
+  font-size: 15px; /* Ajusta el tamaño según tus preferencias */
 }
 
+/* Estilo para el texto en las etiquetas h6 */
+.footer-one h6 {
+  font-size: 12px; /* Ajusta el tamaño según tus preferencias */
+}
+
+/* Estilo para el texto en las etiquetas p */
+.footer-one p {
+  font-size: 12px; /* Ajusta el tamaño según tus preferencias */
+}
+
+.footer-one p {
+  white-space: nowrap;
+}

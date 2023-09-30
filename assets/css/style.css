@@ -1,3 +1,4 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 /* estilos barra de navegacion  */
@@ -251,23 +252,19 @@ hr{
 
 
 /* ----------------------estilos seccion valores-------------- */
-button{
 
-  font-size: 0.8rem;
-  font-weight: 900;s
-  outline: none;  
-  border: 15px;
-  background-color: #1d1d1d;
-  color: #333;
-  padding: 10px   10px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.5s ease;
-      
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .valor {
+    width: 1000%; /* Cambia el ancho para adaptarse a una sola columna */
+    max-width: 100%;
+   
+  }
 }
 
+
 button:hover{
-  background-color: rgb(46, 45, 45);
+  background-color: rgba(46, 45, 45, 0.384);
   
 
 }
@@ -299,27 +296,64 @@ button:hover{
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
 }
 .valor-text-container {
-  margin-top: 10px;
+  display: none;
+   padding: 10px; /* Ajusta el espacio interno del contenedor */
+   /* Oculta inicialmente el contenedor de texto */
+}
+.valor-text-container {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Media Query para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-  .valor {
-    width: 100%; /* Cambia el ancho para adaptarse a una sola columna */
-    
-  }
+.valor-text{
+  text-align: left;
 }
 
+.toggle-button.active {
+  background-color: rgba(46, 45, 45, 0.384);
+}
 
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
 
 .toggle-button {
-  background-color: rgba(255, 127, 80, 0.562);
-  border: 2px solid rgba(0, 0, 0, 0.301);
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background-color: #5352520e;
+  border: none;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
-  
+  border-radius: 50%;
+  color: #ffffff; /* Cambia el color del texto según tus preferencias */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.image-container:hover .toggle-button {
+  display: flex;
+}
+
+
+.valor-text-container.active {
+  display: flex;
+}
+
+.toggle-button:hover,
+.toggle-button.active:hover {
+  background-color: rgba(10, 45, 45, 0.384);
+  cursor: pointer;
 }
 
 .valor-text.hidden {
@@ -330,24 +364,19 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-.valor-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+
 
 .valores-section {
   text-align: center;
-  padding: 40px;
+  padding: 120px;
   background-color: #5352520e;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
 }
 
 .valores-title {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .valor img {
@@ -355,18 +384,10 @@ body {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 10px;
-  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.6);
 }
 
-.valor-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
 
-.valor-subtitle {
-  font-size: 14px;
-}
 
 /*--------------------------------------*/
 
@@ -572,14 +593,15 @@ footer {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif; /* Ajusta según la fuente que desees utilizar */
+  
 }
 
 .ofrecemos-section {
   background: url("../imgs/brand/1000.png") center/cover; /* Ajusta la ruta de la imagen y los estilos de fondo */
-  padding: 100px;
+  
   text-align: center;
   color: white;
-  filter: blur(0.3px);
+  
 }
 
 
@@ -662,4 +684,30 @@ body {
   to {
     left: 100%;
   }
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Estilos para el carrusel */
+  /* Aplica una opacidad del 50% a las imágenes fuera del contenedor */
+.container-carousel::before,
+.container-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.3); /* Cambia el último valor (0.5) para ajustar la opacidad */
+  z-index: -1;
+}
+
+/* Asegura que las imágenes se superpongan al contenido principal */
+.container-carousel {
+  position: relative;
+
 }
