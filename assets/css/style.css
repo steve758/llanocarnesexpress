@@ -1,7 +1,7 @@
-/*
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-/* estilos barra de navegacion  */
+/*---------------------------------estilos barra de navegacion-------------------------------*/
 .nav-buttons{
      
      margin-left: 40%;
@@ -73,7 +73,7 @@ h6{
 
 .nav-item{
   padding: 0 0px;
-  color: rgb(255, 80, 80);
+  color: rgb(0, 0, 0);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -114,10 +114,10 @@ h6{
         
 } 
 
-/*--------------banner 1 --------------*/
+/*-----------------------------------------banner 1-------------------------------------------*/
 #home{
   color: aliceblue;
-  background-image: url("../imgs/carnes.jpg");
+  background-image: url("../imgs/brand/imagen\ banner\ 2.png");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -146,112 +146,13 @@ h6{
 
 #home p{
   color:  rgba(0, 0, 0,0.8);
-  font-weight: bold;
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
   text-shadow: #333 0.1em 0.1em 0.1em; 
   
   
 }
-/*-------------------------*/
 
-#banner h1{
-  color: coral;
-}
-
-
-
-#banner button{
-  background-color: #fb774b;
-}
-
-
-
-#banner button:hover{
-  background-color: #ebe3e31d;
-}
-
-#banner {
-color: aliceblue;
-background-image: url("../imgs/brand/imagen\ banner\ 2desenfoque.png");
-width: 100%;
-height: 80vh;
-background-size: cover;
-background-position-x: center;
-background-position-y: 80px;
-background-repeat: no-repeat;
-background-attachment: fixed;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-text-align: center;
-position: relative; /* Añadir posición relativa */
-}
-
-#banner::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-image: inherit; /* Hereda la imagen de fondo del banner */
-filter: blur(5px); /* Aplica el desenfoque al fondo */
-z-index: -1; /* Coloca el fondo desenfocado detrás del contenido */
-}
-
-
-/*----------------------------productos---------------------------------*/
-
-.product{
-cursor: pointer;
-margin-bottom: 2rem;
-
-}
-  
-.product img{
-    transition: 0.3s all;
-}
-
-.product:hover img{
-    opacity: 0.7;
-
-
-}
-.product .buy-btn{
-background-color: #fb774b;
-transform: translateY(50px);
-opacity: 0;
-transition: 0.3s all;;
-}
-
-.product:hover .buy-btn{
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-
-hr{
-    width: 30px;
-    height: 3px;
-    opacity: 1;
-    background-color: #fb774b;
-}
-
-
-
-.star{
-    padding: 10px 0;
-}
-
-.star i{
-    font-size: 0.9rem;
-    color: goldenrod;
-}
-
-
-
-/* ----------------------estilos seccion valores-------------- */
+/* -------------------------------------estilos seccion valores------------------------ */
 
 /* Media Query para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
@@ -261,7 +162,6 @@ hr{
    
   }
 }
-
 
 button:hover{
   background-color: rgba(46, 45, 45, 0.384);
@@ -278,7 +178,7 @@ button:hover{
 }
 
 .valor {
-  width: 10%; /* O ajusta según tus necesidades */
+  width: 100%; /* O ajusta según tus necesidades */
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
@@ -368,13 +268,20 @@ body {
 
 .valores-section {
   text-align: center;
-  padding: 120px;
-  background-color: #5352520e;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+  padding: 100px;
+  background-color: #ffffff;
+  box-shadow: 0 0px 0cm rgba(0, 0, 0, 0.0)
+  
 }
 
+.valores-section hr{
+  width: 400px; /* Ajusta la longitud de la línea según tus necesidades */
+    height: 1px; /* Ajusta el grosor de la línea según tus necesidades */
+    background-color: #333; /* Ajusta el color de la línea según tus necesidades */
+    
+}
 .valores-title {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -387,11 +294,7 @@ body {
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.6);
 }
 
-
-
-/*--------------------------------------*/
-
-/*------------------banner 2---------------------*/
+/*-----------------------------------------------banner 2------------------------------------------*/
 
 #banner span{
   color: coral;
@@ -414,8 +317,138 @@ body {
   
 }
 
+#banner h1{
+  color: coral;
+}
 
-/* Resto de estilos del .container-carousel */
+
+
+#banner button{
+  background-color: #fb774b;
+}
+
+
+
+#banner button:hover{
+  background-color: #171817a1;
+}
+
+#banner {
+color: aliceblue;
+background-image: url("../imgs/carnes.jpg");
+width: 100%;
+height: 60vh;
+background-size: cover;
+background-position-x: center;
+background-position-y: 50px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+text-align: center;
+position: center; /* Añadir posición relativa */
+}
+
+#banner::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: inherit; /* Hereda la imagen de fondo del banner */
+filter: blur(5px); /* Aplica el desenfoque al fondo */
+z-index: -1; /* Coloca el fondo desenfocado detrás del contenido */
+}
+
+
+/*--------------------------------------productos---------------------------------------------------*/
+
+.product{
+cursor: pointer;
+margin-bottom: 2rem;
+
+}
+  
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+
+
+}
+.product .buy-btn{
+background-color: #fb774b;
+transform: translateY(50px);
+opacity: 0;
+transition: 0.3s all;;
+}
+
+.product:hover .buy-btn{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+hr{
+    width: 30px;
+    height: 3px;
+    opacity: 1;
+    background-color: #fb774b;
+}
+
+.star{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.9rem;
+    color: goldenrod;
+}
+
+/*algunos de nuestros productos*/
+
+#featured {
+  
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  height: 100%;
+  max-width: 1350px; /* Puedes especificar un ancho máximo si lo deseas */
+  margin: 0 ; /* Centra la sección horizontalmente */
+  padding:0; /* Ajusta el espaciado interno según tus necesidades */
+  background-color: #ffffff; /* Color de fondo opcional */
+ 
+}
+#featured .product {
+  margin: 0;
+  padding: 0;
+}
+
+#featured hr {
+  width: 500px; /* Ajusta la longitud de la línea según tus necesidades */
+  height: 1px; /* Ajusta el grosor de la línea según tus necesidades */
+  background-color: #333; /* Ajusta el color de la línea según tus necesidades */
+  margin: 20px auto; /* Ajusta el margen superior e inferior según tus necesidades */
+}
+
+#featured .img-fluid {
+  width: 70%; /* Puedes ajustar el ancho según tus necesidades */
+  height: auto; /* Esto mantiene la proporción original de la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+  border-radius: 15px;
+}
+
+
+
+/*------------------------------estilos Galeria de fotos---------------------------------------------------*/
+
+#titulo-galeria {
+  margin-top: 50px; /* Puedes ajustar según sea necesario */
+  font-size: 2em;  /* Puedes ajustar según sea necesario */
+}
 
 .container-carousel {
   position: relative;
@@ -423,11 +456,10 @@ body {
   height: 300px;
   margin: 0 auto;
   background-color: #e0e0e0;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-  border-radius: 15px;
-  overflow: clip ;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.50);
+  border-radius: 10px;
+  overflow: hidden ;
   
-
 }
 
 .carruseles {
@@ -480,115 +512,26 @@ body {
   right: 10px;
 }
 
-/* Estilos generales para el footer */
-
-footer {
-    background-color: #222;
-    font-family: "Open Sans", Arial, sans-serif;
-    padding: 2px; /* Añade espacio alrededor del contenido del footer */
-    text-align: center; /* Centra el texto del footer */
-  }
-  
-  /* Estilos para encabezados en el footer */
-  footer h5 {
-    color: #d8d8d8;
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin: 0; /* Elimina el margen superior e inferior predeterminado */
-  }
-  
-  /* Estilos para la lista en el footer */
-  footer ul {
-    list-style: none; /* Elimina los marcadores de lista */
-    padding: 0; /* Elimina el espacio interno de la lista */
-  }
-  
-  /* Estilos para los elementos de la lista en el footer */
-  footer li {
-    padding-bottom: 8px;
-  }
-  
-  /* Estilos para los enlaces en el footer */
-  footer a {
-    color: #d8d8d8;
-    text-decoration: none; /* Elimina el subrayado predeterminado */
-    transition: color 0.3s ease; /* Agrega una transición suave al color */
-  }
-  
-  /* Cambia el color de los enlaces cuando se desplazan sobre ellos */
-  footer a:hover {
-    color: #ff000096;
-  }
-  
-  /* Estilos para el bloque de derechos de autor */
-  footer .copyright {
-    margin-top: 20px; /* Agrega espacio en la parte superior del bloque de derechos de autor */
-  }
-  
-  /* Estilos para los íconos de redes sociales en el footer */
-  footer .copyright a {
-    color: #000;
-    height: 40px;
-    width: 40px;
-    background-color: #fff;
-    display: inline-flex; /* Para centrar verticalmente */
-    align-items: center; /* Para centrar verticalmente */
-    justify-content: center; /* Para centrar horizontalmente */
-    text-align: center;
-    line-height: 38px;
-    border-radius: 50%;
-    transition: 0.3s ease;
-    margin: 0 5px;
-  }
-  
-  /* Cambia el color de los íconos de redes sociales cuando se desplazan sobre ellos */
-  footer .copyright a:hover {
-    color: #fff;
-    background-color: #fb774b;
-  }
-  
-  /* Estilos para el texto en el footer */
-  footer p {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 14px; /* Ajusta el tamaño del texto */
-    color: white;
-  }
-  
-  /* Estilos para los encabezados secundarios en el footer */
-  footer h6 {
-    color: white;
-    margin: 0; /* Elimina el margen superior e inferior predeterminado */
-  }
-  
-  /* Estilos para la imagen del logo en el footer */
-  footer .copyright img {
-    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    max-width: 100px; /* Define un ancho máximo para la imagen */
-  }
-  
-/* Estilos para el carrusel */
   /* Aplica una opacidad del 50% a las imágenes fuera del contenedor */
-.container-carousel::before,
-.container-carousel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.3); /* Cambia el último valor (0.5) para ajustar la opacidad */
-  z-index: -1;
-}
-
-/* Asegura que las imágenes se superpongan al contenido principal */
-.container-carousel {
-  position: relative;
+  .container-carousel::before,
+  .container-carousel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.9); /* Cambia el último valor (0.5) para ajustar la opacidad */
+    z-index: -1;
+  }
   
-}
+  /* Asegura que las imágenes se superpongan al contenido principal */
+  .container-carousel {
+    position: relative;
+    
+  }
 
 
-
-
-/*-------estilos que ofrecemos------------*/
+/*--------------------------------------------estilos que ofrecemos----------------------------------------------------------*/
 
 body {
   margin: 0;
@@ -606,25 +549,25 @@ body {
 
 
 .titulo-grafico {
-  font-weight: bold;
+  font-size: 34px;
 }
 
 .ofrecemos-title {
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 10px;
 }
 
 .divider {
-  width: 50px;
+  width: 400px;
   height: 2px;
   background-color: white; /* Ajusta según el color de la línea */
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
 }
 
 .productos-title {
   color: white;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 1px;
 }
 
 .graficos-container {
@@ -644,10 +587,10 @@ body {
 
 
 .barra {
-  width: 0;
-  height: 30px;
+  width: 0px;
+  height: 20px;
   background-color: coral;
-  border-radius: 5px;
+  border-radius: 50px;
   position: relative;
   overflow: hidden;
   transition: width 1s ease; /* Ajusta la duración de la animación aquí */
@@ -656,7 +599,7 @@ body {
 
 
 .barra::after {
-  content: attr(data-porcentaje) '%';
+  content: attr(data-porcentaje) '';
   position: absolute;
   right: 10px;
   top: 50%;
@@ -667,47 +610,146 @@ body {
 
 .barra-container {
   position: relative;
+  width: 60%; /* Establece el ancho máximo al 50% de la pantalla */
+  margin: 0 auto; /* Centra el contenedor */
 }
 
 .porcentaje {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
  }
 @keyframes desplazamiento {
   from {
-    left: 0;
+    left: 50;
   }
 
   to {
-    left: 100%;
+    left: 50%;
   }
 }
 
 
 /*---------------------------------------------------------------------------------------------------*/
 
+/*-----------------------------Estilos generales para el footer---------------------------------*/
 
-
-
-
-/* Estilos para el carrusel */
-  /* Aplica una opacidad del 50% a las imágenes fuera del contenedor */
-.container-carousel::before,
-.container-carousel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.3); /* Cambia el último valor (0.5) para ajustar la opacidad */
-  z-index: -1;
+footer {
+  background-color: #222;
+  color: #d8d8d8;
+  font-family: "Open Sans", Arial, sans-serif;
+  padding: 20px 0; /* Ajusta el espacio interior del footer */
+  text-align: center;
 }
 
-/* Asegura que las imágenes se superpongan al contenido principal */
-.container-carousel {
-  position: relative;
-
+/* Estilos para encabezados en el footer */
+footer h5 {
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0; /* Elimina el margen superior e inferior predeterminado */
 }
+
+/* Estilos para la lista en el footer */
+footer ul {
+  list-style: none; /* Elimina los marcadores de lista */
+  padding: 0; /* Elimina el espacio interno de la lista */
+}
+
+/* Estilos para los elementos de la lista en el footer */
+footer li {
+  padding-bottom: 8px;
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+  color: #d8d8d8;
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  transition: color 0.3s ease; /* Agrega una transición suave al color */
+}
+
+/* Cambia el color de los enlaces cuando se desplazan sobre ellos */
+footer a:hover {
+  color: #636363ad;
+}
+
+/* Estilos para el bloque de derechos de autor */
+footer .copyright {
+  margin-top: 20px; /* Agrega espacio en la parte superior del bloque de derechos de autor */
+}
+
+/* Estilos para los íconos de redes sociales en el footer */
+footer .copyright a {
+  color: #ffffff;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  display: inline-flex; /* Para centrar verticalmente */
+  align-items: center; /* Para centrar verticalmente */
+  justify-content: center; /* Para centrar horizontalmente */
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+
+/* Cambia el color de los íconos de redes sociales cuando se desplazan sobre ellos */
+footer .copyright a:hover {
+  color: #fff;
+  background-color: #fb774b;
+}
+
+/* Estilos para el texto en el footer */
+footer p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px; /* Ajusta el tamaño del texto */
+  color: white;
+}
+
+/* Estilos para los encabezados secundarios en el footer */
+footer h6 {
+  color: white;
+  margin: 0; /* Elimina el margen superior e inferior predeterminado */
+}
+
+/* Estilos para la imagen del logo en el footer */
+footer .copyright img {
+  width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+  max-width: 100px; /* Define un ancho máximo para la imagen */
+}
+
+
+/* Estilo para el texto en las etiquetas li */
+ul.text-uppercase li {
+font-size: 12px; /* Ajusta el tamaño según tus preferencias */
+}
+
+/* Estilo para el texto en las etiquetas h5 */
+.footer-one h5 {
+font-size: 15px; /* Ajusta el tamaño según tus preferencias */
+}
+
+/* Estilo para el texto en las etiquetas h6 */
+.footer-one h6 {
+font-size: 12px; /* Ajusta el tamaño según tus preferencias */
+}
+
+/* Estilo para el texto en las etiquetas p */
+.footer-one p {
+font-size: 12px; /* Ajusta el tamaño según tus preferencias */
+}
+
+.footer-one p {
+white-space: nowrap;
+}
+  
+
+
+
+
+
+
+

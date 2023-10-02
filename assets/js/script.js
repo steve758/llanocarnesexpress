@@ -152,29 +152,20 @@ document.addEventListener('DOMContentLoaded', function () {
   graficos.forEach(grafico => {
     const porcentaje = grafico.getAttribute('data-porcentaje');
     const barra = grafico.querySelector('.barra');
-    barra.style.width = porcentaje + '%';
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  const graficos = document.querySelectorAll('.grafico');
-
-  graficos.forEach(grafico => {
-    const porcentaje = grafico.getAttribute('data-porcentaje');
-    const barra = grafico.querySelector('.barra');
     const porcentajeElement = grafico.querySelector('.porcentaje');
 
     let contador = 0;
-    const duracionAnimacion = 15000; // Duración de la animación en milisegundos
+    const duracionAnimacion = 5000; // Ajusta la duración total de la animación en milisegundos
+
     const intervalo = setInterval(() => {
       contador++;
-      barra.style.width = contador + '%';
-      porcentajeElement.textContent = contador + '%';
+      barra.style.width = (contador / (duracionAnimacion / 100)) + '%';
+      porcentajeElement.textContent = Math.round((contador / duracionAnimacion) * 100) + '%';
 
-      if (contador === parseInt(porcentaje)) {
+      if (contador === duracionAnimacion) {
         clearInterval(intervalo);
       }
-    }, duracionAnimacion / porcentaje); // Ajusta el intervalo en relación con la duración de la animación
+    }, 1); // Establece el intervalo a 1 milisegundo para obtener una animación suave
   });
 });
 
@@ -183,8 +174,24 @@ sr.reveal('.ofrecemos-section',{
 });
 
 sr.reveal('.ofrecemos-section', {
-  duration: 4000,
-  origin: 'top',
+  duration: 2000,
+  origin: 'left',
   distance:'-500px'
 
 }) 
+sr.reveal('.ofrecemos-section', {
+  duration: 4000,
+  origin: 'left',
+  distance: '-500px',
+  afterReveal: startAnimation // Inicia la animación después de revelar la sección
+});
+
+
+/*--------------------------------nuestros valores scroll----------------*/
+document.addEventListener('DOMContentLoaded', function () {
+  sr.reveal('.valores-title', {
+    duration: 2000, // Ajusta la duración de la animación según tus preferencias
+    origin: 'top',
+    distance: '50px' // Ajusta la distancia desde la que se revelará el elemento
+  });
+});
