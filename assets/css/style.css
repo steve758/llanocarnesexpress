@@ -428,7 +428,7 @@ hr{
 }
 
 #featured hr {
-  width: 500px; /* Ajusta la longitud de la línea según tus necesidades */
+  width: 300px; /* Ajusta la longitud de la línea según tus necesidades */
   height: 1px; /* Ajusta el grosor de la línea según tus necesidades */
   background-color: #333; /* Ajusta el color de la línea según tus necesidades */
   margin: 20px auto; /* Ajusta el margen superior e inferior según tus necesidades */

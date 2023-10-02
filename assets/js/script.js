@@ -3,6 +3,7 @@ window.sr = ScrollReveal();
 
 sr.reveal('.scroll-banner',{
         duration : 20
+        
       });
 
     sr.reveal('.scroll-banner', {
@@ -188,10 +189,3 @@ sr.reveal('.ofrecemos-section', {
 
 
 /*--------------------------------nuestros valores scroll----------------*/
-document.addEventListener('DOMContentLoaded', function () {
-  sr.reveal('.valores-title', {
-    duration: 2000, // Ajusta la duración de la animación según tus preferencias
-    origin: 'top',
-    distance: '50px' // Ajusta la distancia desde la que se revelará el elemento
-  });
-});
